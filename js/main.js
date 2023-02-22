@@ -1,3 +1,4 @@
+//prima soluzione
 
 
 /*
@@ -5,7 +6,7 @@ let etaViaggiatore = parseInt(prompt("inserisci l'eta del viaggiatore"));
 let distanza = parseInt(prompt("inserisci la distanza km"));
 
 prezzo = 0.21;
-prezzofinale = etaViaggiatore * distanza;
+prezzofinale = prezzo * distanza;
 console.log(prezzofinale);
 
 sconto20 = (prezzofinale * 20) / 100;
@@ -14,16 +15,16 @@ sconto40 = (prezzofinale * 40) / 100;
 
 if (etaViaggiatore < 18){
     prezzofinale = prezzofinale - sconto20;
-    document.getElementById("biglietto").innerHTML = "Hai lo sconto di 20% <br> "prezzofinale.toFixed(2)
-} else if (distanza > 65){
+    document.getElementById("biglietto").innerHTML = "Hai lo sconto di 20% <br> " + " Il biglietto costa: " + prezzofinale.toFixed(2)
+} else if (etaViaggiatore > 65){
     prezzofinale = prezzofinale - sconto40;
-    document.getElementById("biglietto").innerHTML = "Hai lo sconto di 40%" prezzofinale.toFixed(2)
+    document.getElementById("biglietto").innerHTML = "Hai lo sconto di 40% <br>" +" Il biglietto costa: " + prezzofinale.toFixed(2)
 }else{
-    document.getElementById("biglietto").innerHTML = prezzofinale.toFixed(2)
+    document.getElementById("biglietto").innerHTML = "Il biglietto costa: " + prezzofinale.toFixed(2)
 }
-
 */
 
+//seconda soluzione
 
 let etaViaggiatore = parseInt(prompt("inserisci l'eta del viaggiatore"));
 let kilometri = parseInt(prompt("inserisci la distanza km"));
