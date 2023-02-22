@@ -38,7 +38,7 @@ if (etaViaggiatore < 18){
    
 } else if (etaViaggiatore > 65){
     prezzo = (prezzo / 100 * 60).toFixed(2);
-    sconto = "Hai lo sconto di 40%";    
+    sconto = "Hai lo sconto di 40% <br> ";    
    
   
 }else {
